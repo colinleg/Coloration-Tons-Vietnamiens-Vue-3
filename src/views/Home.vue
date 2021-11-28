@@ -1,18 +1,18 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div class="home flex flex-col justify-center items-center h-screen w-screen ">
+    <h1 class="text-xl mb-24 text-center"> Colorie ton texte pour t'aider à bien prononcer !</h1>
+    <tip-tap></tip-tap>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import TipTap from '../components/Tiptap.vue'
 
 export default defineComponent({
   name: 'Home',
   components: {
-    HelloWorld,
+    TipTap
   },
 });
 </script>
